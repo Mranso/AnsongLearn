@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AnsongLearn"
 include ':app'
+include ':baselibrary'
+include ':videolibrary'

@@ -1,18 +1,19 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.anso.learn'
+    namespace 'com.anso.learn.videolibrary'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.anso.learn"
         minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
+
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -32,5 +33,4 @@ android {
 
 dependencies {
     implementation project(path: ':baselibrary')
-    implementation project(path: ':videolibrary')
 }
