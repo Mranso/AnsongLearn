@@ -15,4 +15,8 @@ dependencyResolutionManagement {
 rootProject.name = "AnsongLearn"
 include ':app'
 include ':baselibrary'
-include ':videolibrary'
+include ':jpush'
+include ':alivideo'
+include ':composelearn'
+include ':kotlinlearn'
+include ':jetpacklearn'

@@ -32,5 +32,9 @@ android {
 
 dependencies {
     implementation project(path: ':baselibrary')
-    implementation project(path: ':videolibrary')
+    implementation project(path: ':alivideo')
+    implementation project(path: ':jpush')
+    implementation project(path: ':kotlinlearn')
+    implementation project(path: ':jetpacklearn')
+    implementation project(path: ':composelearn')
 }
