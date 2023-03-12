@@ -1,0 +1,14 @@
+ext {
+    android = [
+            compileSdkVersion: 33,
+            minSdkVersion    : 23,
+            targetSdkVersion : 33,
+            proguard         : true
+    ]
+
+    versionconfig = [
+            applicationId: "com.anso.learn",
+            versionName  : "1.0.0",
+            versionCode  : 1,
+    ]
+}

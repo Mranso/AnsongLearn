@@ -2,17 +2,16 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
-
 android {
     namespace 'com.anso.learn'
-    compileSdk 33
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.anso.learn"
-        minSdk 23
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        applicationId rootProject.ext.versionconfig.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.versionconfig.versionCode
+        versionName rootProject.ext.versionconfig.versionName
     }
 
     buildTypes {
