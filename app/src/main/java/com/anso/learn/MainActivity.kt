@@ -3,6 +3,7 @@ package com.anso.learn
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.anso.learn.alivideo.VideoMainActivity
+import com.anso.learn.baselibrary.BaseMainActivity
 import com.anso.learn.databinding.ActivityMainBinding
 import com.anso.learn.kotlinlearn.KotlinActivity
 
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.goAliVideo.setOnClickListener {
             VideoMainActivity.start(this)
+        }
+
+        binding.goBaseModule.setOnClickListener {
+            BaseMainActivity.start(this)
         }
     }
 }

@@ -29,11 +29,29 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        dataBinding true
+    }
 }
 
 dependencies {
     api 'androidx.core:core-ktx:1.8.0'
-    api 'androidx.appcompat:appcompat:1.5.1'
+    api 'androidx.appcompat:appcompat:1.6.0'
     api 'com.google.android.material:material:1.5.0'
-    api 'androidx.constraintlayout:constraintlayout:2.1.3'
+    api 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //协程
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+    //lifecycleScope
+    api 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
+    //viewModelScope
+    api 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    //Gson
+    api 'com.google.code.gson:gson:2.9.0'
+    //Retrofit
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    //Retrofit Gson数据解析
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    //OkHttp Log日志打印
+    api 'com.squareup.okhttp3:logging-interceptor:4.9.3'
 }

@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <Button
-        android:id="@+id/goKotlin"
+    <data>
+
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="进入Kotlin模块" />
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/goJPush"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="进入极光推送模块" />
+        <Button
+            android:id="@+id/goKotlin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进入Kotlin模块" />
 
-    <Button
-        android:id="@+id/goAliVideo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="进入阿里云播放器模块" />
+        <Button
+            android:id="@+id/goJPush"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进入极光推送模块" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/goAliVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进入阿里云播放器模块" />
+
+        <Button
+            android:id="@+id/goBaseModule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进入基础模块" />
+
+    </LinearLayout>
+</layout>
