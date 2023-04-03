@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        tools:context=".presentation.SecondScreenActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/displayRecycleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stopSecondScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#345678"
+                android:padding="10dp"
+                android:text="结束投屏"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/controlSecondScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#345678"
+                android:padding="10dp"
+                android:text="副屏操作"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+</layout>

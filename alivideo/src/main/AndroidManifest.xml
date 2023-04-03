@@ -3,6 +3,9 @@
 
     <application>
         <activity
+            android:name=".presentation.SecondScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".VideoMainActivity"
             android:exported="false" />
     </application>

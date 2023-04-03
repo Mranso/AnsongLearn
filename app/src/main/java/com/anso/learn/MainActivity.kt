@@ -28,5 +28,14 @@ class MainActivity : AppCompatActivity() {
         binding.goBaseModule.setOnClickListener {
             BaseMainActivity.start(this)
         }
+        binding.goDisplayActivity.setOnClickListener {
+//            SecondScreenActivity.start(this)
+            binding.lottieAnimationView.setAnimation("lf20_no9qrf5p.json")
+            binding.lottieAnimationView.playAnimation()
+        }
+
+//        binding.lottieAnimationView.setAnimation("lf20_no9qrf5p.json")
+        binding.lottieAnimationView.playAnimation()
     }
+
 }
