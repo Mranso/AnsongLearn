@@ -9,23 +9,23 @@ import android.util.Log
 object LogUtils {
 
     fun asLogVerbose(info: String) {
-        Log.v("An Song Log --->", info)
+        Log.v("AnSongLog --->", info)
     }
 
     fun asLogInfo(info: String) {
-        Log.v("An Song Log --->", info)
+        Log.v("AnSongLog --->", info)
     }
 
     fun asLogError(info: String) {
-        Log.v("An Song Log --->", info)
+        Log.v("AnSongLog --->", info)
     }
 
     fun asLogDebug(info: String) {
-        Log.v("An Song Log --->", info)
+        Log.v("AnSongLog --->", info)
     }
 
     fun asLogWarn(info: String) {
-        Log.v("An Song Log --->", info)
+        Log.v("AnSongLog --->", info)
     }
 
 }
