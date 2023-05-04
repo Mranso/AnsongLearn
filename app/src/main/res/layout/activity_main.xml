@@ -20,6 +20,12 @@
             android:text="进入Kotlin模块" />
 
         <Button
+            android:id="@+id/goCompose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进入Compose模块" />
+
+        <Button
             android:id="@+id/goJPush"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

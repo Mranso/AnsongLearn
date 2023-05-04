@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.anso.learn.alivideo.VideoMainActivity
 import com.anso.learn.baselibrary.BaseMainActivity
+import com.anso.learn.composelearn.ComposeMainActivity
 import com.anso.learn.databinding.ActivityMainBinding
 import com.anso.learn.kotlinlearn.KotlinActivity
 
@@ -15,6 +16,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.goKotlin.setOnClickListener {
             KotlinActivity.start(this)
+        }
+
+        binding.goCompose.setOnClickListener {
+            ComposeMainActivity.start(this)
         }
 
         binding.goJPush.setOnClickListener {
