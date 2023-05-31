@@ -21,7 +21,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AnsongLearn"
+rootProject.name = "iNiNLearn"
 include ':app'
 include ':baselibrary'
 include ':jpush'

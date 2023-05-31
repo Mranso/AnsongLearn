@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.anso.learn.jetpacklearn'
+    namespace 'com.inin.learn.jetpacklearn'
     compileSdkVersion rootProject.ext.android.compileSdkVersion
 
     defaultConfig {

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.anso.learn.kotlinlearn'
+    namespace 'com.inin.learn.kotlinlearn'
     compileSdkVersion rootProject.ext.android.compileSdkVersion
 
     defaultConfig {

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.anso.learn.jpush'
+    namespace 'com.inin.learn.jpush'
     compileSdkVersion rootProject.ext.android.compileSdkVersion
 
     defaultConfig {

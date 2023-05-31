@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.anso.learn.baselibrary.net.WanAndroidViewModel" />
+            type="com.inin.learn.baselibrary.net.WanAndroidViewModel" />
 
     </data>
 
