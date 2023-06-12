@@ -49,18 +49,10 @@
             android:layout_height="wrap_content"
             android:text="副屏显示" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/lottie_animation_view"
+        <Button
+            android:id="@+id/goJetpackActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true" />
+            android:text="进入Jetpack模块" />
     </LinearLayout>
 </layout>

@@ -35,28 +35,25 @@ android {
 }
 
 dependencies {
-    api 'androidx.core:core-ktx:1.7.0'
-    api "org.jetbrains.kotlin:kotlin-stdlib:1.7.10"
-    api 'androidx.appcompat:appcompat:1.6.0'
-    api 'com.google.android.material:material:1.5.0'
+    api 'androidx.core:core-ktx:1.10.0'
+    api "org.jetbrains.kotlin:kotlin-stdlib:1.8.10"
+    api 'androidx.appcompat:appcompat:1.6.1'
+    api 'com.google.android.material:material:1.8.0'
     api 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
     //协程
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
     //lifecycleScope
-    api 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
+    api 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
     //viewModelScope
-    api 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    api 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
     //Gson
-    api 'com.google.code.gson:gson:2.9.0'
+    api 'com.google.code.gson:gson:2.10.1'
     //Retrofit
     api 'com.squareup.retrofit2:retrofit:2.9.0'
     //Retrofit Gson数据解析
     api 'com.squareup.retrofit2:converter-gson:2.9.0'
     //OkHttp Log日志打印
-    api 'com.squareup.okhttp3:logging-interceptor:4.9.3'
-
-    //Lottie 动画
-    api 'com.airbnb.android:lottie:5.2.0'
+    api 'com.squareup.okhttp3:logging-interceptor:4.10.0'
 }

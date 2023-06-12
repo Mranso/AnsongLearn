@@ -3,9 +3,11 @@ package com.inin.learn
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.inin.learn.alivideo.VideoMainActivity
+import com.inin.learn.alivideo.presentation.SecondScreenActivity
 import com.inin.learn.baselibrary.BaseMainActivity
 import com.inin.learn.composelearn.ComposeMainActivity
 import com.inin.learn.databinding.ActivityMainBinding
+import com.inin.learn.jetpacklearn.JetpackMainActivity
 import com.inin.learn.kotlinlearn.KotlinActivity
 
 class MainActivity : AppCompatActivity() {
@@ -34,13 +36,11 @@ class MainActivity : AppCompatActivity() {
             BaseMainActivity.start(this)
         }
         binding.goDisplayActivity.setOnClickListener {
-//            SecondScreenActivity.start(this)
-            binding.lottieAnimationView.setAnimation("lf20_no9qrf5p.json")
-            binding.lottieAnimationView.playAnimation()
+            SecondScreenActivity.start(this)
         }
-
-//        binding.lottieAnimationView.setAnimation("lf20_no9qrf5p.json")
-        binding.lottieAnimationView.playAnimation()
+        binding.goJetpackActivity.setOnClickListener {
+            JetpackMainActivity.start(this)
+        }
     }
 
 }
