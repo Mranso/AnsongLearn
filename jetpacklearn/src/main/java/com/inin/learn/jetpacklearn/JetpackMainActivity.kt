@@ -4,17 +4,12 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.inin.learn.jetpacklearn.databinding.ActivityJetpackMainBinding
 
 class JetpackMainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityJetpackMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityJetpackMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_jetpack_main)
     }
 
 

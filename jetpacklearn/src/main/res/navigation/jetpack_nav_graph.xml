@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/jetpack_nav_graph"
-    app:startDestination="@id/placeholder">
+    app:startDestination="@id/jetpackHomeFragment">
 
+    <fragment
+        android:id="@+id/jetpackHomeFragment"
+        android:name="com.inin.learn.jetpacklearn.ui.JetpackHomeFragment"
+        android:label="fragment_jetpack_home"
+        tools:layout="@layout/fragment_jetpack_home" >
+        <action
+            android:id="@+id/action_jetpackHomeFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
 
-    <fragment android:id="@+id/placeholder" />
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.inin.learn.jetpacklearn.ui.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_jetpackHomeFragment"
+            app:destination="@id/jetpackHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.inin.learn.jetpacklearn.ui.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_jetpackHomeFragment"
+            app:destination="@id/jetpackHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.inin.learn.jetpacklearn.ui.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_jetpackHomeFragment"
+            app:destination="@id/jetpackHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.inin.learn.jetpacklearn.ui.FourthFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/fragment_fourth" >
+        <action
+            android:id="@+id/action_fourthFragment_to_jetpackHomeFragment"
+            app:destination="@id/jetpackHomeFragment" />
+    </fragment>
 </navigation>
